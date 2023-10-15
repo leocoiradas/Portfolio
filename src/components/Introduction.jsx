@@ -9,13 +9,15 @@ function Introduction() {
         img: image
         };
     return (
-        <section>
-            <article>
-                <img src={presentation.img} alt={presentation.name}/>
-                <p>{presentation.name}</p>
+        <section className="flex justify-center items-center p-4 w-[75vw] gap-4 border-2 rounded-md border-red-500">
+            <article className="flex flex-col justify-center items-center gap-4 flex-1">
+                <div className="w-48 h-48">
+                 <img src={presentation.img} className="object-cover w-full h-full" alt={presentation.name}/>
+                </div>
+                <p className="text-center text-xl">{presentation.name}</p>
             </article>
-            <article>
-                <p>{presentation.message}</p>
+            <article className="w-2/3">
+                <p className="text-2xl">{presentation.message}</p>
             </article>
         </section>
     );
