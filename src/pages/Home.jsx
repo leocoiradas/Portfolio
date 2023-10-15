@@ -2,7 +2,7 @@ import Introduction from "../components/Introduction";
 
 function Home(){
     return(
-        <main>
+        <main className="flex justify-center items-center w-screen h-screen">
             <Introduction />
         </main>
     )
