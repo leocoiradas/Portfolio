@@ -23,7 +23,7 @@ function Navbar() {
   ];
   return(
     <ul className="flex justify-center items-center gap-4">
-      {links.map((link) => (<a className="px-4 py-2 text-white text-center rounded-md border-2 border-white" href={link.path}>{link.name}</a>))}
+      {links.map((link) => (<a className="px-4 py-2 text-white text-center hover:rounded-md hover:border-2 hover:border-yellow-400 hover:text-yellow-400" href={link.path}>{link.name}</a>))}
     </ul>
   );
 }
