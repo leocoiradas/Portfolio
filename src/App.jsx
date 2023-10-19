@@ -1,16 +1,14 @@
-
 import "./App.css";
-import Home from "./pages/Home"
-import Header from "./pages/Header";
+import { RouterProvider } from "react-router-dom";
+import router from "./router/router";
 
 function App() {
   
 
   return (
-    <div className="bg-space-background">
-      <Header />
-      <Home />
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
