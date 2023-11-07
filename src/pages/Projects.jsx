@@ -19,7 +19,7 @@ function Proyects(){
     }
     return(
         <Page info = {projectsText}>
-            {proyects.map((element) => (<ProjectCard project={element}/>))}
+            { proyects ? proyects.map((element) => (<ProjectCard project={element}/>)) : <h2>Loading proyects...</h2>}
         </Page>
     )
 }
