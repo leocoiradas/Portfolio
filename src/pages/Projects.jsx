@@ -18,7 +18,7 @@ function Proyects(){
         icon: <BsCodeSlash />
     }
     return(
-        <Page page = {projectsText}>
+        <Page info = {projectsText}>
             {proyects.map((element) => (<ProjectCard project={element}/>))}
         </Page>
     )
