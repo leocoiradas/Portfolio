@@ -6,7 +6,7 @@ import ProjectCard from "../components/ProjectCard";
 import Page from "../components/Page";
 import { BsCodeSlash } from "react-icons/bs"
 
-function Proyects(){
+function Projects(){
     const dispatch = useDispatch()
     const proyects = useSelector((store) => store.proyectsReducer.proyects)
     useEffect(() => {
@@ -24,4 +24,4 @@ function Proyects(){
     )
 }
 
-export default Proyects
+export default Projects
