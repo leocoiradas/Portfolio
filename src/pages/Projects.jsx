@@ -19,7 +19,9 @@ function Projects(){
     }
     return(
         <Page info = {projectsText}>
+            <article className="flex flex-wrap justify-center items-center gap-6">
             { proyects ? proyects.map((element, i) => (<ProjectCard key={i} project={element}/>)) : <h2>Loading proyects...</h2>}
+            </article>
         </Page>
     )
 }
