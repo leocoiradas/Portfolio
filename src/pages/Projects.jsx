@@ -14,7 +14,7 @@ function Projects(){
     }, [])
     const projectsText = {
         title: "Projects",
-        comment: "These are some of the proyects thar I've been working on. Every single one include some of all the Teccnologies that I learned so far. Feel free to check them out!!",
+        comment: "These are some of the proyects that I've been working on. Every single one include some of all the Teccnologies that I learned so far. Feel free to check them out!!",
         icon: <BsCodeSlash />
     }
     return(
