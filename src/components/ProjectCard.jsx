@@ -2,7 +2,6 @@ import React from "react";
 
 function ProjectCard({project}) {
     return (
-        <article>
             <div className="max-w-[30rem] rounded overflow-hidden shadow-lg bg-black ">
                 <div className="w-full">
                     <img className="w-full h-full object-cover" src={project.images[0]} alt={project.name} />
@@ -14,7 +13,6 @@ function ProjectCard({project}) {
                     </p>
                 </div>
             </div>
-        </article>
     )
 }
 
