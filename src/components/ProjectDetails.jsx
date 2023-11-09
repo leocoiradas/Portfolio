@@ -16,7 +16,7 @@ function ProjectDetails() {
     }, [])
     return (
         <>
-            <DetailsCard />
+            <DetailsCard details={proyectDetails}/>
         </>
     )
 }
