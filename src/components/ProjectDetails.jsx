@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { get_proyect_details } from "../store/actions/proyectDetailsAction";
