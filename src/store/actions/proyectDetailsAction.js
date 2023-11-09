@@ -9,6 +9,6 @@ export const get_proyect_details = createAsyncThunk('get_proyect_details', async
             proyect_details: response.data.proyectById
         }
     } catch (error) {
-        
+        console.log(error)
     }
 })
