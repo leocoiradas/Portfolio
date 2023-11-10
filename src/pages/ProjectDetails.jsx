@@ -18,7 +18,7 @@ function ProjectDetails() {
     console.log(projectDetails)
     return (
         <>
-           {projectDetails && projectDetails.images ? <DetailsCard details={projectDetails} /> : null}
+           {projectDetails && projectDetails.images ? <DetailsCard details={ projectDetails } /> : null}
         </>
     )
 }
