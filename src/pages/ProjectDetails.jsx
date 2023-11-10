@@ -3,20 +3,22 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { get_proyect_details } from "../store/actions/proyectDetailsAction";
-import DetailsCard from "./DetailsCard";
+import DetailsCard from "../components/DetailsCard";
 
 function ProjectDetails() {
     const dispatch = useDispatch()
-    const {proyectId} = useParams()
-    const proyectDetails = useSelector((store) => store.proyectDetailsReducer.proyect_details)
+    const { id } = useParams()
+    
     useEffect(() => {
         dispatch(get_proyect_details({
-            id: proyectId
+            id
         }))
     }, [])
+    const projectDetails = useSelector((store) => store.proyectDetailsReducer.proyect_details)
+    console.log(projectDetails)
     return (
         <>
-            <DetailsCard details={proyectDetails}/>
+           {projectDetails && projectDetails.images ? <DetailsCard details={projectDetails} /> : null}
         </>
     )
 }
