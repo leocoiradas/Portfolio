@@ -9,6 +9,7 @@ export const proyectDetailsReducer = createReducer(initialState,
     (builder) => builder
     .addCase(get_proyect_details.fulfilled, (state, action) => {
         return {
+            ...state,
             proyect_details: action.payload.proyect_details
         }
     }))
