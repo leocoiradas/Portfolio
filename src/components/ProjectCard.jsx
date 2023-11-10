@@ -12,7 +12,7 @@ function ProjectCard({project}) {
                     <p className="text-white text-base">
                         {project.shortDesc}
                     </p>
-                    <Link to={`/proyects/${project._id}`} className="w-40 rounded-md text-center bg-purple-500 hover:bg-purple-700 text-white p-3">More Details</Link>
+                    <Link to={`/projects/${project._id}`} className="w-40 rounded-md text-center bg-purple-500 hover:bg-purple-700 text-white p-3">More Details</Link>
                 </div>
             </div>
     )
