@@ -22,23 +22,24 @@ function DetailsCard({ details }) {
     return (
         <>
             {details && details.images ? (<div
-                class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div className="relative overflow-hidden bg-cover bg-no-repeat">
                     <img
-                        class="rounded-t-lg"
-                        src={details.images[index]}
+                        className="rounded-t-lg"
+                        src={`/${details.images[index]}`}
                         alt={details.name} />
+                        {console.log(details.images[index])}
                 </div>
-                <div class="p-6">
+                <div className="p-6">
                     <h5
-                        class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                        className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                         {details.name}
                     </h5>
-                    <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
                         {details.desc}
                     </p>
-                    <p class="text-base text-neutral-600 dark:text-neutral-200">
-                        <small class="text-neutral-500 dark:text-neutral-400">{details.period}</small>
+                    <p className="text-base text-neutral-600 dark:text-neutral-200">
+                        <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
                     </p>
                 </div>
             </div>) : null}
