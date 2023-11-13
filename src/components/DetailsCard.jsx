@@ -33,6 +33,10 @@ function DetailsCard({ details }) {
                         alt={details.name} />
                         {console.log(details.images[index])}
                 </div>
+                <div className="w-full flex flex-wrap justify-around items-center p-4 gap-2">
+                    <button onClick={previousPhoto} className="w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Previous Photo</button>
+                    <button onClick={nextPhoto} className="w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Next Photo</button>
+                </div>
                 <div className="p-6">
                     <h5
                         className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
