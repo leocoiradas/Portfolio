@@ -6,6 +6,7 @@ import { get_proyect_details } from "../store/actions/proyectDetailsAction";
 import DetailsCard from "../components/DetailsCard";
 import Page from "../components/Page";
 import { BiDetail } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 function ProjectDetails() {
     const dispatch = useDispatch()
@@ -26,6 +27,7 @@ function ProjectDetails() {
     return (
         <Page info={detailsText}>
            {projectDetails && projectDetails.images ? <DetailsCard details={ projectDetails } /> : null}
+            <Link to="/projects" className="bg-purple-500 hover:bg-purple-800 text-white rounded-md p-3">Back to Projects</Link>
         </Page>
     )
 }
