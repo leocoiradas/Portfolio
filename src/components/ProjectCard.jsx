@@ -5,7 +5,7 @@ function ProjectCard({project}) {
     return (
             <div className="max-w-[75vw] md:max-w-[38rem] rounded overflow-hidden shadow-lg bg-black">
                 <div className="h-[10rem] md:h-[20rem] w-full">
-                    <img className="object-fill w-full h-full" src={`/${project.images[0]}`} alt={project.name} />
+                    <img className="object-fill w-full h-full" src={project.images[0]} alt={project.name} />
                 </div>
                 <div className="flex flex-col px-6 py-4 gap-2">
                     <div className="font-bold text-xl mb-2 text-white">{project.name}</div>
