@@ -8,13 +8,13 @@ import DetailsCard from "../components/DetailsCard";
 function ProjectDetails() {
     const dispatch = useDispatch()
     const { id } = useParams()
-    
+    const projectDetails = useSelector((store) => store.proyectDetailsReducer.proyect_details)
     useEffect(() => {
         dispatch(get_proyect_details({
             id
         }))
     }, [])
-    const projectDetails = useSelector((store) => store.proyectDetailsReducer.proyect_details)
+   
     console.log(projectDetails)
     return (
         <>
