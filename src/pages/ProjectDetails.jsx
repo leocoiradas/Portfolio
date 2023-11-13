@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { get_proyect_details } from "../store/actions/proyectDetailsAction";
 import DetailsCard from "../components/DetailsCard";
+import Page from "../components/Page";
+import { BiDetail } from "react-icons/bi";
 
 function ProjectDetails() {
     const dispatch = useDispatch()
@@ -14,12 +16,17 @@ function ProjectDetails() {
             id
         }))
     }, [])
+
+    const detailsText = {
+        title: "Details",
+        comment: "Here you have some details of this project. Feel free to check it out",
+        icon: <BiDetail />
+    }
    
-    console.log(projectDetails)
     return (
-        <>
+        <Page info={detailsText}>
            {projectDetails && projectDetails.images ? <DetailsCard details={ projectDetails } /> : null}
-        </>
+        </Page>
     )
 }
 
