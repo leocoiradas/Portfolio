@@ -3,6 +3,7 @@ import Layout from "../pages/Layout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
+import ProjectDetails from "../pages/ProjectDetails";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,10 @@ const router = createBrowserRouter([
                 path: "/projects",
                 element: <Projects />
             },
-            {},
+            {
+                path: "/projects/:id",
+                element: <ProjectDetails />
+            },
             {
                 path: "*",
                 element: <div className="flex justify-center items-center min-h-[90vh]"><h2 className="text-center text-yellow-400 text-2xl w-[75vw]">This page is under construction. Please come back later.</h2></div>
