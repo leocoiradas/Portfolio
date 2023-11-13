@@ -7,7 +7,7 @@ function DetailsCard({ details }) {
         setIndex((currentImage) => (currentImage - 1 >= 0 ? currentImage - 1 : details.images.length - 1))
     }
     const nextPhoto = () => {
-        setIndex((currentImage) => (currentImage + 1 < details.images.length ? currentImage + 1 : 0))
+        setIndex((currentImage) => (currentImage + 1 > details.images.length - 1 ? 0 : currentImage + 1))
     }
     const imageCarousel = () => {
         nextPhoto()
@@ -17,7 +17,10 @@ function DetailsCard({ details }) {
         return () => {
             clearInterval(autoNextPhoto)
         }
-    }, [])
+    }, [index, details])
+    useEffect(() => {
+        setIndex(0);
+    }, [details]);
 
     return (
         <>
@@ -26,7 +29,7 @@ function DetailsCard({ details }) {
                 <div className="relative overflow-hidden bg-cover bg-no-repeat">
                     <img
                         className="rounded-t-lg"
-                        src={`/${details.images[index]}`}
+                        src={details.images[index]}
                         alt={details.name} />
                         {console.log(details.images[index])}
                 </div>
