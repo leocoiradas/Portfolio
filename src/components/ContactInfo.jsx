@@ -6,14 +6,14 @@ function ContactInfo(){
 
     const contact = [
         {
-            website: "GitHub",
-            icon: <BsGithub />,
+            website: "Linkedin",
+            icon: <BsLinkedin />,
             message: "",
             to: ""
         },
         {
-            website: "Linkedin",
-            icon: <BsLinkedin />,
+            website: "GitHub",
+            icon: <BsGithub />,
             message: "",
             to: ""
         },
