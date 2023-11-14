@@ -35,8 +35,8 @@ function ContactInfo(){
     ]
 
     return(
-        <section>
-            {contact.map((element) =>  (<SocialCard socialInfo={element} />))}
+        <section className="flex flex-col justify-center items-center gap-3">
+            {contact.map((element, i) =>  (<SocialCard socialInfo={element} key={i} />))}
         </section>
     )
 }
