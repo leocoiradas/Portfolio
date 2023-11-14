@@ -11,7 +11,7 @@ function ContactInfo(){
             website: "Linkedin",
             icon: <BsLinkedin />,
             message: "Here you have my LinkedIn profile. Feel free to contact me.",
-            to: "linkedin.com/in/alan-coiradas/",
+            to: "https://linkedin.com/in/alan-coiradas/",
             mail: false
 
         },
