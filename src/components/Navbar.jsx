@@ -21,7 +21,7 @@ function Navbar() {
     },
     {
        name: "Contact",
-       path: "*" 
+       path: "/contact" 
     },
     
   ];
