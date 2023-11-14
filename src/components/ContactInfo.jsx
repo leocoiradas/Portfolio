@@ -12,7 +12,6 @@ function ContactInfo(){
             icon: <BsLinkedin />,
             message: "Here you have my LinkedIn profile. Feel free to contact me.",
             to: "linkedin.com/in/alan-coiradas/",
-            color: "blue",
             mail: false
 
         },
@@ -21,7 +20,6 @@ function ContactInfo(){
             icon: <BsGithub />,
             message: "If you want to check other projects or check the code of those projects showed here, check out my GitHub profile.",
             to: "https://github.com/leocoiradas",
-            color: "orange",
             mail: false
         },
         {
@@ -29,7 +27,6 @@ function ContactInfo(){
             icon: <BiLogoGmail />,
             message: "Here's my email if you want to have a more direct contact with me.",
             to: "alancoiradas00@gmail.com",
-            color: "red",
             mail: true
         }
     ]
