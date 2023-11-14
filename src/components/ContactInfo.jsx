@@ -11,22 +11,26 @@ function ContactInfo(){
             website: "Linkedin",
             icon: <BsLinkedin />,
             message: "Here you have my LinkedIn profile. Feel free to contact me.",
+            to: "linkedin.com/in/alan-coiradas/",
             color: "blue",
-            to: "linkedin.com/in/alan-coiradas/"
+            mail: false
+
         },
         {
             website: "GitHub",
             icon: <BsGithub />,
             message: "If you want to check other projects or check the code of those projects showed here, check out my GitHub profile.",
+            to: "https://github.com/leocoiradas",
             color: "orange",
-            to: "https://github.com/leocoiradas"
+            mail: false
         },
         {
             website: "E-Mail",
             icon: <BiLogoGmail />,
             message: "Here's my email if you want to have a more direct contact with me.",
+            to: "alancoiradas00@gmail.com",
             color: "red",
-            to: "alancoiradas00@gmail.com"
+            mail: true
         }
     ]
 
