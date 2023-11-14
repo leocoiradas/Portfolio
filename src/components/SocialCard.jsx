@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function SocialCard({ socialInfo }) {
     return (
@@ -12,7 +11,7 @@ function SocialCard({ socialInfo }) {
             <div className="flex-1">
                 <h2 className={`text-${socialInfo.color} text-2xl`}>{socialInfo.website}</h2>
                 <p className="text-xl">{socialInfo.message}</p>
-                <Link to={socialInfo.to} className={`bg-${socialInfo.color}-500 hover:bg-${socialInfo.color}-700 rounded-md p-3`}>Go</Link>
+                <a href={socialInfo.to} className={`bg-${socialInfo.color}-500 hover:bg-${socialInfo.color}-700 rounded-md p-3`}>Go</a>
             </div>
         </article>
     )
