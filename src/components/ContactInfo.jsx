@@ -24,6 +24,7 @@ function ContactInfo(){
             to: ""
         }
     ]
+    const colors = ["blue", "orange", "red"]
 
     return(
         <section>
