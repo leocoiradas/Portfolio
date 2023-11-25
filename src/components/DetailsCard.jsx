@@ -31,9 +31,8 @@ function DetailsCard({ details }) {
                         className=" h-full w-full rounded-t-lg object-fill"
                         src={details.images[index]}
                         alt={details.name} />
-                        {console.log(details.images[index])}
                 </div>
-                <div className="w-full flex flex-wrap justify-around items-center p-4 gap-2">
+                <div className="w-full flex flex-wrap justify-evenly items-center p-4 gap-2">
                     <button onClick={previousPhoto} className="w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Previous Photo</button>
                     <button onClick={nextPhoto} className="w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Next Photo</button>
                 </div>
