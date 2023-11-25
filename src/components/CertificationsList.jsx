@@ -22,7 +22,7 @@ function CertificationList(){
     ]
 
     return (
-        <section className="max-w-[75dvw] flex p-3 gap-4">
+        <section className="max-w-[90dvw] flex p-3 gap-7">
             {certificationInfo.map((element) => (<CertificationCard certification={element}/>))}
         </section>
     )
