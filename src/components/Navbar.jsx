@@ -16,8 +16,8 @@ function Navbar() {
       path: "/projects"
     },
     {
-      name: "Studies",
-      path: "*"
+      name: "Certifications",
+      path: "/certifications"
     },
     {
        name: "Contact",
