@@ -1,13 +1,17 @@
 import Introduction from "../components/Introduction";
-
+import Page from "../components/Page";
+import { FaHome } from "react-icons/fa";
 
 function Home(){
+    const homeText = {
+        title: "Home",
+        comment: "",
+        icon: <FaHome />
+    }
     return(
-        <main className="flex flex-col justify-center items-center w-full h-[90vh] gap-8">
-        
-            <h3 className="text-yellow-500 text-center text-3xl">Presentación</h3>
+        <Page info={homeText}>
             <Introduction />
-        </main>
+        </Page>
     )
 }
 
