@@ -9,15 +9,9 @@ function Introduction() {
         img: image
         };
     return (
-        <section className="flex justify-center items-center p-4 w-[75vw] gap-4 border-2 rounded-md border-red-500 min-h-[50vh] backdrop-blur-sm bg-black/30">
-            <article className="flex flex-col justify-center items-center gap-4 flex-1">
-                <div className="w-48 h-48">
-                 <img src={presentation.img} className="object-cover w-full h-full" alt={presentation.name}/>
-                </div>
-                <p className="text-center text-2xl text-yellow-600">{presentation.name}</p>
-            </article>
-            <article className="flex flex-col w-2/3 gap-4">
-                <p className="text-2xl text-yellow-500">{presentation.message}</p>
+        <section className="flex justify-center items-center p-4 w-[75vw] gap-4 border-2 rounded-md border-purple-500 min-h-[50vh] backdrop-blur-sm bg-black/30">
+            <article className="flex flex-col justify-center items-center w-full gap-4">
+                <p className="text-2xl text-center text-white">{presentation.message}</p>
             </article>
         </section>
     );
