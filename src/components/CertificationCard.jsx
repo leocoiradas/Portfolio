@@ -2,7 +2,7 @@ import React from "react";
 
 function CertificationCard({ certification }) {
     return (
-        <article className="flex flex-col justify-center items-center w-[24rem] border-2 rounded-md bg-purple-600 hover:scale-[110%] p-3 gap-3">
+        <article className="flex flex-col justify-center items-center w-[24rem] border-2 rounded-md bg-purple-600 hover:scale-[110%] ease-linear duration-300 p-3 gap-3">
             <div className="max-h-[14rem]">
                 <img src={certification.image} className="w-full h-full rounded-md"/>
             </div>
