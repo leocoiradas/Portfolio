@@ -9,13 +9,13 @@ function Details() {
   };
 
   return (
-    <article className="flex justify-center items-center w-[85dvw] gap-3 p-4 text-2xl text-yellow-500 border-2 rounded-md border-cyan-400 ">
+    <article className="flex justify-center items-center w-[85dvw] gap-3 p-4 text-2xl text-white border-2 rounded-md border-purple-400 ">
         <article className="flex flex-col justify-center items-center flex-1">
             <article className="w-48 h-48">
                 <img src={profileImg} alt={details.name} classname="object-cover w-full h-full" />
             </article>
-            <h4>{details.name}</h4>
-            <h4>{details.title}</h4>
+            <h4 className="text-purple-700">{details.name}</h4>
+            <h4 className="text-purple-700">{details.title}</h4>
       </article>
       <article className="flex flex-col gap-4 w-2/3">
         <p className="text-md">{details.message}</p>
