@@ -1,12 +1,20 @@
 import React from "react";
 import Details from "../components/details";
+import Skills from "../components/Skills";
+import Page from "../components/Page";
+import { FaUserCircle } from "react-icons/fa";
 
 function About(){
+    const aboutInfo = {
+        title: "About me",
+        comment: "Here's some info about me.",
+        icon: <FaUserCircle />
+    }
     return (
-        <section className="flex flex-col justify-center items-center min-h-[90vh] gap-8 text-yellow-400">
-            <h3 className="text-center text-3xl">About me</h3>
+        <Page info={aboutInfo}>
             <Details />
-        </section>
+            <Skills />
+        </Page>
     )
 }
 export default About
