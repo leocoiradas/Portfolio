@@ -1,19 +1,15 @@
 import React from "react";
 import profileImg from "../assets/profile/profile.png";
-import Technologies from "./Technologies";
 
 function Details() {
   const details = {
     name: "Alan Leonel Coiradas",
     title: "Full Stack Developer",
-    birthDate: "14/02/2000",
-    country: "Argentina",
-    city: "Campana",
-    nationality: "argentino",
+    message: "Saludos, soy Alan, un apasionado desarrollador Full Stack especializado en el Stack MERN. Actualmente, estoy inmerso en proyectos que no solo ponen a prueba mis capacidades, sino que también generan soluciones innovadoras. Mi compromiso con la excelencia y la pasión por el desarrollo tecnológico son las fuerzas que impulsan mi viaje profesional. Únete a mí en este viaje, donde la curiosidad es la brújula y los desafíos son la chispa que enciende la creatividad. ¡Gracias por explorar mi rincón digital! "
   };
 
   return (
-    <article className="flex justify-center items-center w-[75vw] gap-3 p-4 text-2xl text-yellow-500 border-2 rounded-md border-cyan-400 ">
+    <article className="flex justify-center items-center w-[85dvw] gap-3 p-4 text-2xl text-yellow-500 border-2 rounded-md border-cyan-400 ">
         <article className="flex flex-col justify-center items-center flex-1">
             <article className="w-48 h-48">
                 <img src={profileImg} alt={details.name} classname="object-cover w-full h-full" />
@@ -22,14 +18,8 @@ function Details() {
             <h4>{details.title}</h4>
       </article>
       <article className="flex flex-col gap-4 w-2/3">
-        <p><b>Fecha de nacimiento: </b>{details.birthDate}</p>
-        <p><b>País: </b>{details.country}</p>
-        <p><b>Ciudad: </b>{details.city}</p>
-        <p><b>Nacionalidad: </b>{details.nationality}</p>
-        <p><b>Conocimientos: </b></p>
-        <Technologies />
+        <p className="text-md">{details.message}</p>
       </article>
-      
     </article>
   );
 }
