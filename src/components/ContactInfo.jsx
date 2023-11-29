@@ -18,7 +18,7 @@ function ContactInfo(){
         {
             website: "GitHub",
             icon: <BsGithub />,
-            message: "If you want to check other projects or check the code of those projects showed here, check out my GitHub profile.",
+            message: "If you want to check other projects check out my GitHub profile.",
             to: "https://github.com/leocoiradas",
             mail: false
         },
