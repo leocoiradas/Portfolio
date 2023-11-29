@@ -2,8 +2,8 @@ import React from "react";
 
 function SocialCard({ socialInfo }) {
     return (
-        <article className={`w-[70vw] flex justify-center items-center flex-wrap gap-2 border-2 rounded-md border-purple-600 p-3 backdrop-blur-md bg-black/60`}>
-            <div className="w-1/3">
+        <article className="w-[70vw] flex justify-center items-center flex-wrap gap-2 border-2 rounded-md border-purple-600 backdrop-blur-md bg-black/60 p-3">
+            <div className="w-1/5">
                 <figure className="flex justify-center items-center text-purple-500 text-5xl">
                     {socialInfo.icon}
                 </figure>
