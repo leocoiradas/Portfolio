@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import NavbarFunction from "../components/NavbarFunction";
 
 function Header(){
     return(
@@ -7,7 +7,7 @@ function Header(){
             <div className=" w-1/2">
                 <h3 className="text-white">Portfolio</h3>
             </div>
-            <Navbar />
+            <NavbarFunction />
         </header>
     )
 }
