@@ -18,7 +18,7 @@ function Details() {
             <h4 className="text-purple-700">{details.title}</h4>
       </article>
       <article className="flex flex-col gap-4 lg:w-2/3">
-        <p className="text-center text-sm lg:text-start lg:text-md">{details.message}</p>
+        <p className="text-center text-sm lg:text-start lg:text-2xl">{details.message}</p>
       </article>
     </article>
   );
