@@ -23,25 +23,25 @@ function DetailsCard({ details }) {
     }, [details]);
 
     return (
-        <section className="max-w-[75vw]">
+        <section className="lg:max-w-[75vw]">
             {details && details.images ? (<div
                 className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                <div className="h-[40rem]">
+                <div className="h-[14rem] lg:h-[40rem]">
                     <img
                         className=" h-full w-full rounded-t-lg object-fill"
                         src={details.images[index]}
                         alt={details.name} />
                 </div>
-                <div className="w-full flex flex-wrap justify-evenly items-center p-4 gap-2">
-                    <button onClick={previousPhoto} className="w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Previous Photo</button>
-                    <button onClick={nextPhoto} className="w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Next Photo</button>
+                <div className="w-full flex flex-col lg:flex-row flex-wrap justify-evenly items-center p-4 gap-2">
+                    <button onClick={previousPhoto} className="w-4/5 lg:w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Previous Photo</button>
+                    <button onClick={nextPhoto} className="w-4/5 lg:w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Next Photo</button>
                 </div>
-                <div className="p-6">
+                <div className="p-6 text-center lg:text-start">
                     <h5
                         className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                         {details.name}
                     </h5>
-                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                    <p className="mb-4 text-sm lg:text-base text-neutral-600 dark:text-neutral-200">
                         {details.desc}
                     </p>
                     <p className="text-base text-neutral-600 dark:text-neutral-200">
