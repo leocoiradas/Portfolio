@@ -5,7 +5,7 @@ function Header(){
     return(
         <header className="flex justify-between items-center w-full min-h-[10dvh] p-3">
             <div className="p-3">
-                <h3 className="text-white">Portfolio</h3>
+                <h1 className="text-white">Portfolio</h1>
             </div>
             <NavbarFunction />
         </header>
