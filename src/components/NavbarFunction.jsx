@@ -7,7 +7,6 @@ function NavbarFunction(){
     const [open, setOpen] = useState(false)
     const handleNavbar = () => {
         setOpen(!open)
-        console.log("This works!!")
     }
     return(
         <div className={`${open ? " flex justify-end fixed  inset-0 backdrop-blur-md bg-black/30 bg-black bg-opacity-50 z-50" : null}`}>
