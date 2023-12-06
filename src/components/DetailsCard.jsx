@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { FaGithub } from "react-icons/fa";
 
 function DetailsCard({ details }) {
     const [index, setIndex] = useState(0)
@@ -21,6 +22,8 @@ function DetailsCard({ details }) {
     useEffect(() => {
         setIndex(0);
     }, [details]);
+
+    const gitHubIcon = <FaGithub />
 
     return (
         <section className="lg:max-w-[75vw]">
@@ -47,6 +50,9 @@ function DetailsCard({ details }) {
                     <p className="text-base text-neutral-600 dark:text-neutral-200">
                         <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
                     </p>
+                    <div className="w-full flex justify-center items-center">
+                        <a href="" className="w-52 inline-flex items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} Github repository</a>
+                    </div>
                 </div>
             </div>) : null}
 
