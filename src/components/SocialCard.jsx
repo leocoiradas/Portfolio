@@ -13,7 +13,7 @@ function SocialCard({ socialInfo }) {
                 <p className="font-mono text-xl text-white">{socialInfo.message}</p>
                 {socialInfo.mail ? (<a href={`mailto:${socialInfo.to}`} target="_blank" className="w-36 inline-flex justify-start items-center text-center bg-cyan-500 hover:bg-blue-700 rounded-md px-6 py-2 gap-2">{socialInfo.icon} {socialInfo.website}</a>)
                 :
-                <a href={socialInfo.to} target="_blank" className="w-36 inline-flex justify-start items-center text-center bg-cyan-500 hover:bg-blue-700 rounded-md px-6 py-2 gap-2">{socialInfo.icon} {socialInfo.website}</a>}
+                <a href={socialInfo.to} target="_blank" className="w-36 inline-flex items-baseline justify-start text-center bg-cyan-500 hover:bg-blue-700 rounded-md px-6 py-2 gap-2">{socialInfo.icon} {socialInfo.website}</a>}
             </div>
         </article>
     )
