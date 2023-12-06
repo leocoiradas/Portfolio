@@ -51,7 +51,7 @@ function DetailsCard({ details }) {
                         <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
                     </p>
                     <div className="w-full flex justify-center items-center">
-                        <a href="" className="w-52 inline-flex items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} Github repository</a>
+                        <a href="" className="w-52 inline-flex justify-center items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} GitHub repository</a>
                     </div>
                 </div>
             </div>) : null}
