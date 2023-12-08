@@ -1,6 +1,6 @@
 import React from "react";
-import Details from "../components/details";
-import Skills from "../components/Skills";
+import Details from "../components/about_components/Details";
+import Skills from "../components/about_components/Skills";
 import Page from "../components/Page";
 import { FaUserCircle } from "react-icons/fa";
 
