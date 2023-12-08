@@ -1,5 +1,6 @@
 import React from "react";
-import image from "../assets/profile/profile.png"
+import image from "/src/assets/profile/profile.png"
+
 
 function Introduction() {
     const presentation = {

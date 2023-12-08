@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from "../assets/profile/profile.png";
+import profileImg from "/src/assets/profile/profile.png";
 
 function Details() {
   const details = {
