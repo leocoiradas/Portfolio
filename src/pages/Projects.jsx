@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { get_proyects } from "../store/actions/proyectsActions";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/projects_components/ProjectCard";
 import Page from "../components/Page";
 import { BsCodeSlash } from "react-icons/bs"
 
