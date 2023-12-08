@@ -1,0 +1,50 @@
+{
+    "header": {
+        "navbar":{
+            "home": "Inicio",
+            "about": "Sobre mí",
+            "projects" : "Proyectos",
+            "certifications": "Certificaciones",
+            "contact": "Contacto"
+        }
+    },
+    "Page": {
+        "Home": {
+            "title": "Inicio",
+            "desc": ""
+        },
+        "About": {
+            "title": "Sobre mí",
+            "desc": ""
+        },
+        "projects": {
+            "title": "Proyectos",
+            "desc": ""
+        },
+        "certifications": {
+            "title": "Certificaciones",
+            "desc": ""
+        },
+        "contact": {
+            "title": "Contacto",
+            "desc": ""
+        }
+    },
+    "Home": {
+        "message" : "Bienvenido a mi portfolio. Soy Alan, un desarrollador Full Stack especializado en el Stack MERN. Este espacio es el resultado de dedicación y pasión, donde cada línea de código cuenta una historia de desafíos superados y soluciones innovadoras. Te invito a explorar y descubrir el mundo digital que he creado. Espero que tu visita sea inspiradora y que tengas un excelente día."
+    },
+    "about": {
+        "message": ""
+    },
+    "projects": {
+        "button": "Más detalles"
+    },
+    "contact": {
+        "messages": {
+            "linkedin": "",
+            "github": "",
+            "mail": "",
+            "resume": ""
+        }
+    }
+}
