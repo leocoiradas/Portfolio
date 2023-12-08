@@ -1,4 +1,4 @@
-import Introduction from "../components/Introduction";
+import Introduction from "../components/home_components/Introduction";
 import Page from "../components/Page";
 import { FaHome } from "react-icons/fa";
 
