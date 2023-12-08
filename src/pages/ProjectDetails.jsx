@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { get_proyect_details } from "../store/actions/proyectDetailsAction";
-import DetailsCard from "../components/DetailsCard";
+import DetailsCard from "../components/projects_components/DetailsCard";
 import Page from "../components/Page";
 import { BiDetail } from "react-icons/bi";
 import { Link } from "react-router-dom";
