@@ -1,8 +1,8 @@
 import React from "react";
 import Page from "../components/Page";
-import ContactInfo from "../components/ContactInfo";
+import ContactInfo from "../components/contact_components/ContactInfo";
 import { BiMessageDetail } from "react-icons/bi";
-import Curriculum from "../components/Curriculum";
+import Curriculum from "../components/contact_components/Curriculum";
 
 function Contact(){
     const contactText = {
