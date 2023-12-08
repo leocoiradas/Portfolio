@@ -1,5 +1,5 @@
 import React from "react";
-import CertificationList from "../components/CertificationsList";
+import CertificationList from "../components/certifications_components/CertificationsList";
 import Page from "../components/Page";
 import { BiSolidCertification } from "react-icons/bi";
 
