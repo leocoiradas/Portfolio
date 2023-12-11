@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function DetailsCard({ details }) {
     const [index, setIndex] = useState(0)
@@ -25,6 +26,11 @@ function DetailsCard({ details }) {
 
     const gitHubIcon = <FaGithub />
 
+    const { t, i18n } = useTranslation()
+    const currentLanguage = i18n.language;
+    
+    let languageDesc = currentLanguage == "es" ? details.desc.es : details.desc.en
+
     return (
         <section className="lg:max-w-[75vw]">
             {details && details.images ? (<div
@@ -45,7 +51,7 @@ function DetailsCard({ details }) {
                         {details.name}
                     </h5>
                     <p className="mb-4 text-sm lg:text-base text-neutral-600 dark:text-neutral-200">
-                        {details.desc}
+                        {languageDesc}
                     </p>
                     <p className="text-base text-neutral-600 dark:text-neutral-200">
                         <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
