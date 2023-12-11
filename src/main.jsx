@@ -4,8 +4,17 @@ import App from './App.jsx'
 import './index.css'
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 import global_es from "./languages/es/global.json"
 import global_en from "./languages/en/global.json"
+
+
+
+const languageDetector = new LanguageDetector();
+i18next.use(languageDetector);
+
+
+
 
 i18next.init({
   interpolation: {escapeValue: false},
