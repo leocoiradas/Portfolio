@@ -34,7 +34,7 @@
         "message" : "Welcome to my portfolio. I'm Alan, a Full Stack developer specializing in the MERN Stack. This space is the result of dedication and passion, where each line of code tells a story of challenges overcome and innovative solutions. I invite you to explore and discover the digital world I've created. I hope your visit is inspiring, and may you have an excellent day."
     },
     "about": {
-        "message": ""
+        "message": "I'm Alan, a passionate developer with a year of dedication to studying web programming, focusing specifically on the MERN Stack and utilizing JavaScript as my primary tool. My primary focus is to put my knowledge to the test through challenging projects that not only strengthen my skills but also serve as tangible evidence of my capability. Each project is an opportunity to showcase my expertise in web development and overcome technical challenges. Additionally, I am constantly on the lookout for new skills that can enhance my professional profile, ensuring continuous growth in the ever-evolving technological landscape."
     },
     "projects": {
         "button": "More Details"
