@@ -1,11 +1,13 @@
 import React from "react";
 import profileImg from "/src/assets/profile/profile.png";
+import { useTranslation } from "react-i18next";
 
 function Details() {
+  const { t } = useTranslation("global")
   const details = {
     name: "Alan Leonel Coiradas",
     title: "Full Stack Developer",
-    message: "Saludos, soy Alan, un apasionado desarrollador Full Stack especializado en el Stack MERN. Actualmente, estoy inmerso en proyectos que no solo ponen a prueba mis capacidades, sino que también generan soluciones innovadoras. Mi compromiso con la excelencia y la pasión por el desarrollo tecnológico son las fuerzas que impulsan mi viaje profesional. Únete a mí en este viaje, donde la curiosidad es la brújula y los desafíos son la chispa que enciende la creatividad. ¡Gracias por explorar mi rincón digital! "
+    message: "about.message"
   };
 
   return (
@@ -18,7 +20,7 @@ function Details() {
             <h4 className="text-purple-700">{details.title}</h4>
       </article>
       <article className="flex flex-col gap-4 lg:w-2/3">
-        <p className="text-center text-base lg:text-start lg:text-2xl">{details.message}</p>
+        <p className="text-center text-base lg:text-start lg:text-2xl">{t(details.message)}</p>
       </article>
     </article>
   );
