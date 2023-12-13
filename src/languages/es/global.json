@@ -47,6 +47,9 @@
     "projects": {
         "button": "Más detalles"
     },
+    "projectDetails": {
+        "githubRepository": "Repositorio de GitHub"
+    },
     "contact": {
         "linkedin": "Este es mi perfil de LinkedIn. Échale un vistazo y conectémos para ampliar nuestra red profesional.",
         "github": "Explore mi perfil de GitHub para echar un vistazo a mis proyectos de codificación y logros.",
