@@ -26,7 +26,7 @@ function DetailsCard({ details }) {
 
     const gitHubIcon = <FaGithub />
 
-    const { t, i18n } = useTranslation()
+    const { t, i18n } = useTranslation("global")
     const currentLanguage = i18n.language;
     
     let languageDesc = currentLanguage == "es" ? details.desc.es : details.desc.en
@@ -57,7 +57,7 @@ function DetailsCard({ details }) {
                         <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
                     </p>
                     <div className="w-full flex justify-center items-center">
-                        <a href={details.github} target="_blank" className="w-52 inline-flex justify-center items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} GitHub repository</a>
+                        <a href={details.github} target="_blank" className="w-52 inline-flex justify-center items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} {t("projectDetails.githubRepository")}</a>
                     </div>
                 </div>
             </div>) : null}
