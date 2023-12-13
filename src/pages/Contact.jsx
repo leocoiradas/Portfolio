@@ -3,11 +3,13 @@ import Page from "../components/Page";
 import ContactInfo from "../components/contact_components/ContactInfo";
 import { BiMessageDetail } from "react-icons/bi";
 import Curriculum from "../components/contact_components/Curriculum";
+import { useTranslation } from "react-i18next";
 
 function Contact(){
+    const { t } = useTranslation("global")
     const contactText = {
-        title: "Contact",
-        comment: "Do you want to have a direct contact with me? Here you have my social media accounts. Contact me whenever you want and I'll respond as soon as I can.",
+        title: t("page.contact.title"),
+        comment: t("page.contact.desc"),
         icon: <BiMessageDetail />
     }
     return(
