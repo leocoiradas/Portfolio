@@ -6,6 +6,10 @@
             "projects" : "Projects",
             "certifications": "Certifications",
             "contact": "Contact"
+        },
+        "language": {
+            "en": "English",
+            "es": "Spanish"
         }
     },
     "page": {
