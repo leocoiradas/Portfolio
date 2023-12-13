@@ -13,25 +13,25 @@
         }
     },
     "page": {
-        "Home": {
+        "home": {
             "title": "Home",
             "desc": ""
         },
-        "About": {
+        "about": {
             "title": "About Me",
-            "desc": ""
+            "desc": "Let me share a bit about myself."
         },
         "projects": {
             "title": "Projects",
-            "desc": ""
+            "desc": "These are some of the projects I've been working on. Each one incorporates various technologies I've learned along the way. Feel free to check them out!"
         },
         "certificacions": {
             "title": "Studies & Certifications",
-            "desc": ""
+            "desc": "These are the certifications I have obtained so far. I'm always looking forward to expanding my knowledge and acquiring new skills!"
         },
         "contact": {
             "title": "contact",
-            "desc": ""
+            "desc": "Explore my social media accounts, and feel free to connect with me on any platform. Let's get in touch and start a conversation!"
         }
     },
     "home": {
@@ -44,11 +44,10 @@
         "button": "More Details"
     },
     "contact": {
-        "messages": {
-            "linkedin": "",
-            "github": "",
-            "mail": "",
-            "resume": ""
-        }
+        "linkedin": "Here's my LinkedIn profile. Take a look, and let's connect to expand our professional network!",
+        "github": "Explore my GitHub profile for a glimpse into my coding projects!",
+        "mail": "For direct communication, please feel free to email me. I will respond promptly.",
+        "resume": "Download my resume here. Feel free to review it, and I welcome any potential project opportunities."
+    
     }
 }
