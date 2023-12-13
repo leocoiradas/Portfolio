@@ -7,8 +7,10 @@ import DetailsCard from "../components/projects_components/DetailsCard";
 import Page from "../components/Page";
 import { BiDetail } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function ProjectDetails() {
+    const { t } = useTranslation("global")
     const dispatch = useDispatch()
     const { id } = useParams()
     const projectDetails = useSelector((store) => store.proyectDetailsReducer.proyect_details)
@@ -19,8 +21,8 @@ function ProjectDetails() {
     }, [])
 
     const detailsText = {
-        title: "Details",
-        comment: "Here you have some details of this project. Feel free to check it out",
+        title: t("page.projectDetails.title"),
+        comment: t("page.projectDetails.desc"),
         icon: <BiDetail />
     }
    
