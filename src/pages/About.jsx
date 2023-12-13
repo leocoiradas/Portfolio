@@ -3,11 +3,13 @@ import Details from "../components/about_components/Details";
 import Skills from "../components/about_components/Skills";
 import Page from "../components/Page";
 import { FaUserCircle } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function About(){
+    const { t } = useTranslation("global")
     const aboutInfo = {
-        title: "About me",
-        comment: "Here's some info about me.",
+        title: t("page.about.title"),
+        comment: t("page.about.desc"),
         icon: <FaUserCircle />
     }
     return (
