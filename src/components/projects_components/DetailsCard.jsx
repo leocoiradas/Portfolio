@@ -32,10 +32,10 @@ function DetailsCard({ details }) {
     let languageDesc = currentLanguage == "es" ? details.desc.es : details.desc.en
 
     return (
-        <section className="lg:max-w-[75vw]">
+        <section className="lg:max-w-[65dvw]">
             {details && details.images ? (<div
                 className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                <div className="h-[14rem] lg:h-[40rem]">
+                <div className="h-[16rem] lg:h-[34rem]">
                     <img
                         className=" h-full w-full rounded-t-lg object-fill"
                         src={details.images[index]}
@@ -57,7 +57,7 @@ function DetailsCard({ details }) {
                         <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
                     </p>
                     <div className="w-full flex justify-center items-center">
-                        <a href={details.github} target="_blank" className="w-52 inline-flex justify-center items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} {t("projectDetails.githubRepository")}</a>
+                        <a href={details.github} target="_blank" className="w-auto inline-flex justify-center items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} {t("projectDetails.githubRepository")}</a>
                     </div>
                 </div>
             </div>) : null}
