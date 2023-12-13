@@ -25,6 +25,10 @@
             "title": "Proyectos",
             "desc": "Estos son algunos de los proyectos en los que he estado trabajando. Cada uno incluye algunas de las tecnologías que he aprendido hasta ahora. ¡Siéntete libre de revisarlos!"
         },
+        "projectDetails": {
+            "title": "Detalles",
+            "desc": "Aquí tienes algunos detalles sobre este proyecto. Siéntete libre de echar un vistazo."
+        },
         "certifications": {
             "title": "Certificaciones",
             "desc": "Estas son las certificaciones que he obtenido hasta ahora. Siempre estoy buscando expandir mi conocimiento y adquirir nuevas habilidades."
