@@ -29,7 +29,7 @@
             "title": "Details",
             "desc": "Here are some details about this project. Feel free to take a look!"
         },
-        "certificacions": {
+        "certifications": {
             "title": "Studies & Certifications",
             "desc": "These are the certifications I have obtained so far. I'm always looking forward to expanding my knowledge and acquiring new skills!"
         },
@@ -46,6 +46,9 @@
     },
     "projects": {
         "button": "More Details"
+    },
+    "projectDetails": {
+        "githubRepository": "GitHub repository"
     },
     "contact": {
         "linkedin": "Here's my LinkedIn profile. Take a look, and let's connect to expand our professional network!",
