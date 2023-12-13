@@ -18,9 +18,9 @@ function LanguageSwitch(){
     }
 
     return(
-        <select onChange={switchLanguage} className="w-28 text-2xl lg:text-base bg-black text-white text-center rounded-md p-1 ">
-            <option value="en">{t("header.language.en")}</option>
-            <option value="es">{t("header.language.es")}</option>
+        <select onChange={switchLanguage} className="w-28 text-2xl lg:text-base bg-transparent text-white text-center rounded-md p-1 ">
+            <option value="en" className="bg-black">{t("header.language.en")}</option>
+            <option value="es" className="bg-black">{t("header.language.es")}</option>
         </select>
     )
 }
