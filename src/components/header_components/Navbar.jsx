@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import LanguageSwitch from "./LanguageSwitch";
 
 function Navbar() {
   const { t } = useTranslation("global")
@@ -36,6 +37,7 @@ function Navbar() {
             {t(link.name)}
           </Link>
             ))}
+        <LanguageSwitch />
       </ul> 
   );
 }
