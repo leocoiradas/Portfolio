@@ -25,6 +25,10 @@
             "title": "Projects",
             "desc": "These are some of the projects I've been working on. Each one incorporates various technologies I've learned along the way. Feel free to check them out!"
         },
+        "projectDetails":{
+            "title": "Details",
+            "desc": "Here are some details about this project. Feel free to take a look!"
+        },
         "certificacions": {
             "title": "Studies & Certifications",
             "desc": "These are the certifications I have obtained so far. I'm always looking forward to expanding my knowledge and acquiring new skills!"
