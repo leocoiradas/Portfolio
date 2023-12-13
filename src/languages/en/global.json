@@ -48,7 +48,8 @@
         "button": "More Details"
     },
     "projectDetails": {
-        "githubRepository": "GitHub repository"
+        "githubRepository": "GitHub repository",
+        "backButton": "Back to Projects"
     },
     "contact": {
         "linkedin": "Here's my LinkedIn profile. Take a look, and let's connect to expand our professional network!",
