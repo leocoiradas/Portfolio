@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 
 function ProjectCard({project}) {
-    const { t, i18n } = useTranslation()
+    const { t, i18n } = useTranslation("global")
     const currentLanguage = i18n.language;
     let languageShortDesc = currentLanguage == "es" ? project.shortDesc.es : project.shortDesc.en
     
@@ -21,7 +21,7 @@ function ProjectCard({project}) {
                     <p className="text-white text-base text-center lg:text-start">
                         {languageShortDesc}
                     </p>
-                    <Link to={`/projects/${project._id}`} className="w-40 rounded-md text-center bg-purple-500 hover:bg-purple-700 text-white p-2">{t("More Details")}</Link>
+                    <Link to={`/projects/${project._id}`} className="w-40 rounded-md text-center bg-purple-500 hover:bg-purple-700 text-white p-2">{t("projects.button")}</Link>
                 </div>
             </div>
     )
