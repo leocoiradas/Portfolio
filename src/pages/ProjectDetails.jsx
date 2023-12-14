@@ -29,7 +29,7 @@ function ProjectDetails() {
     return (
         <Page info={detailsText}>
            {projectDetails && projectDetails.images ? <DetailsCard details={ projectDetails } /> : null}
-            <Link to="/projects" className="bg-purple-500 hover:bg-purple-800 text-white rounded-md p-3">{t("projectDetails.backButton")}</Link>
+            <Link to="/projects" className="bg-purple-500 hover:bg-purple-800 rounded-md p-3">{t("projectDetails.backButton")}</Link>
         </Page>
     )
 }
