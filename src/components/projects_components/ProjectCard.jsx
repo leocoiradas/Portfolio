@@ -21,7 +21,7 @@ function ProjectCard({project}) {
                     <p className="text-white text-base text-center lg:text-start">
                         {languageShortDesc}
                     </p>
-                    <Link to={`/projects/${project._id}`} className="w-40 rounded-md text-center bg-purple-500 hover:bg-purple-700 text-white p-2">{t("projects.button")}</Link>
+                    <Link to={`/projects/${project._id}`} className="w-40 rounded-md text-center bg-purple-500 hover:bg-purple-700 p-2">{t("projects.button")}</Link>
                 </div>
             </div>
     )
