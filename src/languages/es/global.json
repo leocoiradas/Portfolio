@@ -1,0 +1,61 @@
+{
+    "header": {
+        "navbar":{
+            "home": "Inicio",
+            "about": "Sobre mí",
+            "projects" : "Proyectos",
+            "certifications": "Certificaciones",
+            "contact": "Contacto"
+        },
+        "language": {
+            "en": "Inglés",
+            "es": "Español"
+        }
+    },
+    "page": {
+        "home": {
+            "title": "Inicio",
+            "desc": ""
+        },
+        "about": {
+            "title": "Sobre mí",
+            "desc": "Permíteme compartir un poco de información sobre mí."
+        },
+        "projects": {
+            "title": "Proyectos",
+            "desc": "Estos son algunos de los proyectos en los que he estado trabajando. Cada uno incluye algunas de las tecnologías que he aprendido hasta ahora. ¡Siéntete libre de revisarlos!"
+        },
+        "projectDetails": {
+            "title": "Detalles",
+            "desc": "Aquí tienes algunos detalles sobre este proyecto. Siéntete libre de echar un vistazo."
+        },
+        "certifications": {
+            "title": "Certificaciones",
+            "desc": "Estas son las certificaciones que he obtenido hasta ahora. Siempre estoy buscando expandir mi conocimiento y adquirir nuevas habilidades."
+        },
+        "contact": {
+            "title": "Contacto",
+            "desc": "Aquí están mis cuentas de redes sociales. Siéntete libre de revisarlas y no dudes en ponerte en contacto. ¡Espero conocerte pronto!"
+        }
+    },
+    "home": {
+        "message" : "Bienvenido a mi portfolio. Soy Alan, un desarrollador Full Stack especializado en el Stack MERN. Este espacio es el resultado de dedicación y pasión, donde cada línea de código cuenta una historia de desafíos superados y soluciones innovadoras. Te invito a explorar y descubrir el mundo digital que he creado. Espero que tu visita sea inspiradora y que tengas un excelente día."
+    },
+    "about": {
+        "message": "Soy un apasionado desarrollador con un año de dedicación al estudio de la programación web, centrándome en el Stack MERN y empleando JavaScript como mi herramienta principal. Mi enfoque principal es poner a prueba mis conocimientos a través de proyectos desafiantes que no solo fortalecen mis habilidades, sino que también sirven como evidencia tangible de mi capacidad. Cada proyecto es una oportunidad para demostrar mi destreza en el desarrollo web y para superar desafíos técnicos. Además, estoy constantemente en la búsqueda de nuevas habilidades que puedan mejorar mi perfil profesional, asegurando un crecimiento continuo en el cambiante panorama tecnológico."
+    },
+    "projects": {
+        "button": "Más detalles"
+    },
+    "projectDetails": {
+        "githubRepository": "Repositorio de GitHub",
+        "backButton": "Regresar a Proyectos"
+    },
+    "contact": {
+        "linkedin": "Este es mi perfil de LinkedIn. Échale un vistazo y conectémos para ampliar nuestra red profesional.",
+        "github": "Explore mi perfil de GitHub para echar un vistazo a mis proyectos de codificación y logros.",
+        "mail": "Para una comunicación directa, no dudes en enviarme un correo electrónico. Responderé prontamente.",
+        "resume": "Descarga aquí mi currículum. Agradezco la revisión y estoy disponible para cualquier oportunidad de proyecto que pueda surgir."
+        
+    }
+}

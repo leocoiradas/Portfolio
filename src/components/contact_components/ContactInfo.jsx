@@ -3,14 +3,17 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
 import SocialCard from "./SocialCard";
+import { useTranslation } from "react-i18next";
 
 function ContactInfo(){
+
+    const { t, i18n } = useTranslation("global")
 
     const contact = [
         {
             website: "Linkedin",
             icon: <BsLinkedin />,
-            message: "Here you have my LinkedIn profile. Feel free to contact me.",
+            message: t("contact.linkedin"),
             to: "https://linkedin.com/in/alan-coiradas/",
             mail: false
 
@@ -18,14 +21,14 @@ function ContactInfo(){
         {
             website: "GitHub",
             icon: <BsGithub />,
-            message: "If you want to check other projects check out my GitHub profile.",
+            message: t("contact.github"),
             to: "https://github.com/leocoiradas",
             mail: false
         },
         {
             website: "E-Mail",
             icon: <BiLogoGmail />,
-            message: "Here's my email if you want to have a more direct contact with me.",
+            message: t("contact.mail"),
             to: "alancoiradas00@gmail.com",
             mail: true
         }
