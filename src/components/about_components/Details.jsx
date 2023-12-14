@@ -20,7 +20,7 @@ function Details() {
             <h4 className="text-purple-700">{details.title}</h4>
       </article>
       <article className="flex flex-col gap-4 lg:w-2/3">
-        <p className="text-center text-base font-mono lg:text-start lg:text-2xl">{t(details.message)}</p>
+        <p className="text-center text-base font-mono lg:text-start lg:text-xl">{t(details.message)}</p>
       </article>
     </article>
   );
