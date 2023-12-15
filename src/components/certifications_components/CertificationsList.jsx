@@ -10,7 +10,7 @@ function CertificationList(){
         {
             title: "Frontend Developer",
             institution: "MindHub",
-            image: "src/assets/certification_images/frontend-developer-certificate.png",
+            image: ".../assets/certification_images/frontend-developer-certificate.png",
             skills: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />, <FaGit />, <FaGithub />, <FaBootstrap />]
         },
         {
