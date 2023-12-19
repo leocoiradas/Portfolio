@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { get_proyects } from "../store/actions/proyectsActions";
+import { get_projects } from "../store/actions/projectsActions";
 import ProjectCard from "../components/projects_components/ProjectCard";
 import Page from "../components/Page";
 import { BsCodeSlash } from "react-icons/bs";
@@ -11,9 +11,9 @@ import LoadingData from "../components/projects_components/LoadingData";
 function Projects(){
     const { t } = useTranslation("global")
     const dispatch = useDispatch()
-    const proyects = useSelector((store) => store.proyectsReducer.proyects)
+    const projects = useSelector((store) => store.projectsReducer.projects)
     useEffect(() => {
-        dispatch(get_proyects())
+        dispatch(get_projects())
     }, [])
     const projectsText = {
         title: t("page.projects.title"),
@@ -23,7 +23,7 @@ function Projects(){
     return(
         <Page info = {projectsText}>
             <article className="flex flex-wrap justify-center items-center gap-6">
-            { proyects ? proyects.map((element, i) => (<ProjectCard key={i} project={element}/>)) : <LoadingData /> }
+            { !projects ? <LoadingData /> : projects.map((element, i) => (<ProjectCard key={i} project={element}/>)) }
             </article>
         </Page>
     )

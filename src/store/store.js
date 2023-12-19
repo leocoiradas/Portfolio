@@ -1,13 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { proyectsReducer } from "./reducers/proyectsReducer";
+import { projectsReducer } from "./reducers/projectsReducer";
 import { userReducer } from "./reducers/userReducer";
-import { proyectDetailsReducer } from "./reducers/proyectDetailsReducer";
+import { projectDetailsReducer } from "./reducers/projectDetailsReducer";
 
 const store = configureStore({
     reducer: {
-        proyectsReducer,
+        projectsReducer,
         userReducer,
-        proyectDetailsReducer
+        projectDetailsReducer
     }
 });
 
