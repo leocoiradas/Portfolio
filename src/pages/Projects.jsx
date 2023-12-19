@@ -6,6 +6,7 @@ import ProjectCard from "../components/projects_components/ProjectCard";
 import Page from "../components/Page";
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
+import LoadingData from "../components/projects_components/LoadingData";
 
 function Projects(){
     const { t } = useTranslation("global")
@@ -22,7 +23,7 @@ function Projects(){
     return(
         <Page info = {projectsText}>
             <article className="flex flex-wrap justify-center items-center gap-6">
-            { proyects ? proyects.map((element, i) => (<ProjectCard key={i} project={element}/>)) : <h2>Loading proyects...</h2>}
+            { proyects ? proyects.map((element, i) => (<ProjectCard key={i} project={element}/>)) : <LoadingData /> }
             </article>
         </Page>
     )
