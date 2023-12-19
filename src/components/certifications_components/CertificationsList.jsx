@@ -10,14 +10,15 @@ function CertificationList(){
         {
             title: "Frontend Developer",
             institution: "MindHub",
-            image: ".../assets/certification_images/frontend-developer-certificate.png",
-            skills: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />, <FaGit />, <FaGithub />, <FaBootstrap />]
+
+            image: "/assets/certification_images/frontend-developer-certificate.png",
+            skills: [<FaHtml5 key="HTML"/>, <FaCss3Alt key="CSS" />, <IoLogoJavascript key="JavaScript" />, <FaGit key="Git" />, <FaGithub key="GitHub" />, <FaBootstrap key="Bootstrap" />]
         },
         {
             title: "Full Stack MERN Developer",
             institution: "MindHub",
-            image: "src/assets/certification_images/full-stack-mern-developer-certificate.png", 
-            skills: [<FaReact />, <SiRedux />, <SiMongodb />, <SiExpress />, <FaNodeJs />, <SiPostman />, <SiTailwindcss />]
+            image: "/assets/certification_images/full-stack-mern-developer-certificate.png", 
+            skills: [<FaReact key="React" />, <SiRedux key="Redux" />, <SiMongodb key="MongoDB" />, <SiExpress key="Express" />, <FaNodeJs key="Nodejs" />, <SiPostman key="Postman" />, <SiTailwindcss key="TailwindCSS" />]
         }
     ]
 

@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { get_proyect_details } from "../store/actions/proyectDetailsAction";
+import { get_project_details } from "../store/actions/projectDetailsAction";
 import DetailsCard from "../components/projects_components/DetailsCard";
 import Page from "../components/Page";
 import { BiDetail } from "react-icons/bi";
@@ -13,9 +13,9 @@ function ProjectDetails() {
     const { t } = useTranslation("global")
     const dispatch = useDispatch()
     const { id } = useParams()
-    const projectDetails = useSelector((store) => store.proyectDetailsReducer.proyect_details)
+    const projectDetails = useSelector((store) => store.projectDetailsReducer.project_details)
     useEffect(() => {
-        dispatch(get_proyect_details({
+        dispatch(get_project_details({
             id
         }))
     }, [])
