@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import LoadingData from "./LoadingData";
+
 
 function DetailsCard({ details }) {
     const [index, setIndex] = useState(0)
@@ -60,7 +62,7 @@ function DetailsCard({ details }) {
                         <a href={details.github} target="_blank" className="w-auto inline-flex justify-center items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} {t("projectDetails.githubRepository")}</a>
                     </div>
                 </div>
-            </div>) : null}
+            </div>) : <LoadingData />}
 
         </section>
     )
