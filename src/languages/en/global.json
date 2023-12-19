@@ -45,7 +45,8 @@
         "message": "I'm Alan, a passionate developer with a year of dedication to studying web programming, focusing specifically on the MERN Stack and utilizing JavaScript as my primary tool. My primary focus is to put my knowledge to the test through challenging projects that not only strengthen my skills but also serve as tangible evidence of my capability. Each project is an opportunity to showcase my expertise in web development and overcome technical challenges. Additionally, I am constantly on the lookout for new skills that can enhance my professional profile, ensuring continuous growth in the ever-evolving technological landscape."
     },
     "projects": {
-        "button": "More Details"
+        "button": "More Details",
+        "loadingData": "Loading data. Please wait a moment."
     },
     "projectDetails": {
         "githubRepository": "GitHub repository",
