@@ -45,7 +45,8 @@
         "message": "Soy un apasionado desarrollador con un año de dedicación al estudio de la programación web, centrándome en el Stack MERN y empleando JavaScript como mi herramienta principal. Mi enfoque principal es poner a prueba mis conocimientos a través de proyectos desafiantes que no solo fortalecen mis habilidades, sino que también sirven como evidencia tangible de mi capacidad. Cada proyecto es una oportunidad para demostrar mi destreza en el desarrollo web y para superar desafíos técnicos. Además, estoy constantemente en la búsqueda de nuevas habilidades que puedan mejorar mi perfil profesional, asegurando un crecimiento continuo en el cambiante panorama tecnológico."
     },
     "projects": {
-        "button": "Más detalles"
+        "button": "Más detalles",
+        "loadingData": "Cargando datos. Por favor espere un momento."
     },
     "projectDetails": {
         "githubRepository": "Repositorio de GitHub",
