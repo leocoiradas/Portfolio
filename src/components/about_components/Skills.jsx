@@ -10,7 +10,7 @@ function Skills(){
         <article className="flex flex-col justify-center items-center gap-5 py-3 w-4/5 ">
             <h3 className="text-3xl text-purple-500">Skills</h3>
             <div className="flex justify-center items-center flex-wrap gap-3">
-                {skillsCollection.map((element) => (<p className="p-2 text-purple-700 rounded-md text-center text-4xl"><b>{element}</b></p>))}
+                {skillsCollection.map((element) => (<p className="p-2 text-yellow-600 rounded-md text-center text-4xl"><b>{element}</b></p>))}
             </div>
             
         </article>
