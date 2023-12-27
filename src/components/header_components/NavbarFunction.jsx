@@ -19,7 +19,7 @@ function NavbarFunction(){
         <div className={`${open ? " flex justify-end fixed  inset-0 backdrop-blur-md bg-black/30 bg-black bg-opacity-50 z-50" : null}`}>
             <div className="lg:hidden flex justify-end h-full">
                 <HamburgerButton buttonSwitch={handleNavbar} openSwitch={open}>
-                    <Navbar />
+                    <Navbar navFunction={handleNavbar} />
                 </HamburgerButton>
             </div>
             <div className="hidden lg:block">
