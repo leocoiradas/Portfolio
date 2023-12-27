@@ -1,0 +1,11 @@
+.layout {
+    background-color: black;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='2.5' fill='white' stroke='black' stroke-width='1'/></svg>");
+    background-size: cover;
+    
+    background-position: 0px 0px, 25px 0px, 50px 0px, 75px 0px, 100px 0px,
+      125px 0px, 150px 0px, 175px 0px, 200px 0px, 225px 0px, 250px 0px, 275px 0px,
+      300px 0px, 325px 0px, 350px 0px, 375px 0px, 400px 0px, 425px 0px, 450px 0px,
+      475px 0px, 500px 0px;
+  }
+  
