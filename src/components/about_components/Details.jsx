@@ -6,7 +6,7 @@ function Details() {
   const { t } = useTranslation("global")
   const details = {
     name: "Alan Leonel Coiradas",
-    title: "Full Stack Developer",
+    profession: "Full Stack Developer",
     message: "about.message"
   };
 
@@ -16,8 +16,8 @@ function Details() {
             <article className="w-48 h-48">
                 <img src={profileImg} alt={details.name} className="object-cover w-full h-full" />
             </article>
-            <h4 className="text-purple-700">{details.name}</h4>
-            <h4 className="text-purple-700">{details.title}</h4>
+            <h4 className="text-purple-500">{details.name}</h4>
+            <h4 className="text-purple-500">{details.profession}</h4>
       </article>
       <article className="flex flex-col gap-4 lg:w-2/3">
         <p className="text-center text-base font-mono lg:text-start lg:text-xl">{t(details.message)}</p>
