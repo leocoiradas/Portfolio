@@ -58,5 +58,8 @@
         "mail": "For direct communication, please feel free to email me. I will respond promptly.",
         "resume": "Download my resume here. Feel free to review it, and I welcome any potential project opportunities."
     
+    },
+    "resume":{
+        "title": "Resume"
     }
 }
