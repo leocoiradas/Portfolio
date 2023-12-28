@@ -61,5 +61,8 @@
     },
     "resume":{
         "title": "Curriculum"
+    },
+    "certifications": {
+        "button": "Ir al certificado"
     }
 }
