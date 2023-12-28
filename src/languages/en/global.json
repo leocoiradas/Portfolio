@@ -61,5 +61,9 @@
     },
     "resume":{
         "title": "Resume"
+    },
+    "certifications": {
+        "button": "Link to certificate"
     }
+    
 }
