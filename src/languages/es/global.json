@@ -56,10 +56,10 @@
         "linkedin": "Este es mi perfil de LinkedIn. Échale un vistazo y conectémos para ampliar nuestra red profesional.",
         "github": "Explore mi perfil de GitHub para echar un vistazo a mis proyectos de codificación y logros.",
         "mail": "Para una comunicación directa, no dudes en enviarme un correo electrónico. Responderé prontamente.",
-        "resume": "Descarga aquí mi currículum. Agradezco la revisión y estoy disponible para cualquier oportunidad de proyecto que pueda surgir."
+        "curriculum": "Descarga aquí mi currículum. Agradezco la revisión y estoy disponible para cualquier oportunidad de proyecto que pueda surgir."
         
     },
-    "resume":{
+    "curriculum":{
         "title": "Curriculum"
     },
     "certifications": {

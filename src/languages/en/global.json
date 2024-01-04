@@ -56,11 +56,11 @@
         "linkedin": "Here's my LinkedIn profile. Take a look, and let's connect to expand our professional network!",
         "github": "Explore my GitHub profile for a glimpse into my coding projects!",
         "mail": "For direct communication, please feel free to email me. I will respond promptly.",
-        "resume": "Download my resume here. Feel free to review it, and I welcome any potential project opportunities."
+        "curriculum": "Download my curriculum here. Feel free to review it, and I welcome any potential project opportunities."
     
     },
-    "resume":{
-        "title": "Resume"
+    "curriculum":{
+        "title": "Curriculum"
     },
     "certifications": {
         "button": "Link to certificate"
