@@ -34,9 +34,9 @@ function ContactInfo(){
             mail: true
         },
         {
-            website: t("resume.title"),
+            website: t("curriculum.title"),
             icon: <FaAddressCard />,
-            message: t("contact.resume"),
+            message: t("contact.curriculum"),
             to: "https://drive.google.com/file/d/1QaLopfYUq-3MCwj37I9mmFdc80kCfhsc/view?usp=drive_link",
             mail: false
         }
