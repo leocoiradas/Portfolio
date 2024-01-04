@@ -23,7 +23,7 @@ function Projects(){
     return(
         <Page info = {projectsText}>
             <article className="flex flex-wrap justify-center items-center gap-6">
-            { !projects ? <LoadingData /> : projects.map((element, i) => (<ProjectCard key={i} project={element}/>)) }
+            { !projects.length == 0 ? projects.map((element, i) => (<ProjectCard key={i} project={element}/>)) : <LoadingData />  }
             </article>
         </Page>
     )

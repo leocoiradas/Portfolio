@@ -2,7 +2,6 @@ import React from "react";
 import Page from "../components/Page";
 import ContactInfo from "../components/contact_components/ContactInfo";
 import { BiMessageDetail } from "react-icons/bi";
-import Curriculum from "../components/contact_components/Curriculum";
 import { useTranslation } from "react-i18next";
 
 function Contact(){
@@ -15,7 +14,6 @@ function Contact(){
     return(
         <Page info={contactText}>
             <ContactInfo />
-            <Curriculum />
         </Page>
     )
 }

@@ -3,9 +3,9 @@ import Layout from "../pages/Layout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
-import ProjectDetails from "../pages/ProjectDetails";
 import Contact from "../pages/Contact";
 import Certifications from "../pages/Certifications";
+import ProjectDetails from "../pages/ProjectDetails";
 
 const router = createBrowserRouter([
     {
@@ -29,12 +29,12 @@ const router = createBrowserRouter([
                 element: <ProjectDetails />
             },
             {
-                path: "/contact",
-                element: <Contact />
-            },
-            {
                 path: "/certifications",
                 element: <Certifications />
+            },
+            {
+                path: "/contact",
+                element: <Contact />
             },
             {
                 path: "*",

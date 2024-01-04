@@ -10,15 +10,20 @@ import global_en from "./languages/en/global.json"
 
 
 
-const languageDetector = new LanguageDetector();
+const languageDetector = new LanguageDetector(
+  {
+    lookupQuerystring: true,
+    lookuplocalStorage: true
+  }
+);
 i18next.use(languageDetector);
-
+const currentLanguage = i18next.language
 
 
 
 i18next.init({
   interpolation: {escapeValue: false},
-  lng: "en",
+  lng: currentLanguage,
   resources: {
     es: {
       global: global_es
@@ -26,7 +31,7 @@ i18next.init({
     en: {
       global: global_en
     }
-  }
+  },
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(

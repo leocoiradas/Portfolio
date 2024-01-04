@@ -2,6 +2,7 @@ import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
+import { MdOutlineContactPage } from "react-icons/md";
 import SocialCard from "./SocialCard";
 import { useTranslation } from "react-i18next";
 
@@ -31,6 +32,13 @@ function ContactInfo(){
             message: t("contact.mail"),
             to: "alancoiradas00@gmail.com",
             mail: true
+        },
+        {
+            website: t("resume.title"),
+            icon: <MdOutlineContactPage />,
+            message: t("contact.resume"),
+            to: "https://drive.google.com/file/d/1QaLopfYUq-3MCwj37I9mmFdc80kCfhsc/view?usp=drive_link",
+            mail: false
         }
     ]
 

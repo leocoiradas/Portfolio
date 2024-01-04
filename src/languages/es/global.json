@@ -58,5 +58,11 @@
         "mail": "Para una comunicación directa, no dudes en enviarme un correo electrónico. Responderé prontamente.",
         "resume": "Descarga aquí mi currículum. Agradezco la revisión y estoy disponible para cualquier oportunidad de proyecto que pueda surgir."
         
+    },
+    "resume":{
+        "title": "Curriculum"
+    },
+    "certifications": {
+        "button": "Ir al certificado"
     }
 }
