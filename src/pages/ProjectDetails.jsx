@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { get_project_details } from "../store/actions/projectDetailsAction";
 import DetailsCard from "../components/projects_components/DetailsCard";
+import LoadingData from "../components/projects_components/LoadingData";
 import Page from "../components/Page";
 import { BiDetail } from "react-icons/bi";
 import { Link } from "react-router-dom";
@@ -28,8 +29,8 @@ function ProjectDetails() {
    
     return (
         <Page info={detailsText}>
-           {projectDetails && projectDetails.images ? <DetailsCard details={ projectDetails } /> : null}
-            <Link to="/projects" className="bg-purple-500 hover:bg-purple-800 rounded-md p-3">{t("projectDetails.backButton")}</Link>
+           {projectDetails && projectDetails.images ? <DetailsCard details={ projectDetails } /> : <LoadingData />}
+            <Link to="/projects" className="w-auto bg-purple-500 hover:bg-purple-800 rounded-md p-3">{t("projectDetails.backButton")}</Link>
         </Page>
     )
 }

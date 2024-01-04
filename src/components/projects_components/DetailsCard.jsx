@@ -35,7 +35,7 @@ function DetailsCard({ details }) {
 
     return (
         <section className="lg:max-w-[65dvw]">
-            {details && details.images ? (<div
+            <div
                 className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                 <div className="h-[16rem] lg:h-[34rem]">
                     <img
@@ -62,7 +62,7 @@ function DetailsCard({ details }) {
                         <a href={details.github} target="_blank" className="w-auto inline-flex justify-center items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} {t("projectDetails.githubRepository")}</a>
                     </div>
                 </div>
-            </div>) : <LoadingData />}
+            </div>
 
         </section>
     )
