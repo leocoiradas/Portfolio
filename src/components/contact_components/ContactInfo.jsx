@@ -2,7 +2,7 @@ import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
-import { RiProfileLine } from "react-icons/ri";
+import { FaAddressCard } from "react-icons/fa";
 import SocialCard from "./SocialCard";
 import { useTranslation } from "react-i18next";
 
@@ -35,7 +35,7 @@ function ContactInfo(){
         },
         {
             website: t("resume.title"),
-            icon: <RiProfileLine />,
+            icon: <FaAddressCard />,
             message: t("contact.resume"),
             to: "https://drive.google.com/file/d/1QaLopfYUq-3MCwj37I9mmFdc80kCfhsc/view?usp=drive_link",
             mail: false
