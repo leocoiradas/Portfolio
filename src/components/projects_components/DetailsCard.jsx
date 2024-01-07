@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-
+import ProjectSkills from "./ProjectSkills";
 
 
 function DetailsCard({ details }) {
@@ -32,11 +32,9 @@ function DetailsCard({ details }) {
                     <p className="mb-4 text-sm lg:text-base text-neutral-600 dark:text-neutral-200">
                         {languageDesc}
                     </p>
-                    <div className="flex flex-col md:flex-row gap-1">
-                        <h6 className="text-xl text-amber-500">Skills used in the project: </h6>
-                        <div className="flex flex-wrap gap-2 justify-center items-center">
-                            {details.skills.map((element) => (<p className="text-base md:text-lg text-purple-500">{element}</p>))}
-                        </div>
+                    <div className="flex flex-col md:flex-row gap-1 p-3">
+                        <h6 className="text-xl text-amber-500">{t("projectDetails.projectSkills")}</h6>
+                        <ProjectSkills skillsArr={details.skills} />
                     </div>
                     <p className="text-base text-neutral-600 dark:text-neutral-200">
                         <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
