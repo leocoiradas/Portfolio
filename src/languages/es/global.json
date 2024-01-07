@@ -50,6 +50,7 @@
     },
     "projectDetails": {
         "githubRepository": "Repositorio de GitHub",
+        "projectSkills": "Habilidades utilizadas en el proyecto:",
         "backButton": "Volver a Proyectos"
     },
     "contact": {
