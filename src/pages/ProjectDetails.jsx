@@ -26,11 +26,10 @@ function ProjectDetails() {
         comment: t("page.projectDetails.desc"),
         icon: <BiDetail />
     }
-   
     return (
         <Page info={detailsText}>
-           {projectDetails && projectDetails.images ? <DetailsCard details={ projectDetails } /> : <LoadingData />}
-            <Link to="/projects" className="w-40 bg-purple-500 hover:bg-purple-800 rounded-md p-3">{t("projectDetails.backButton")}</Link>
+           {projectDetails && projectDetails.images && projectDetails.skills ? <DetailsCard details={ projectDetails } /> : <LoadingData />}
+            <Link to="/projects" className="w-40 text-center bg-purple-500 hover:bg-purple-800 rounded-md p-3">{t("projectDetails.backButton")}</Link>
         </Page>
     )
 }
