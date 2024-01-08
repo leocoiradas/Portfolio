@@ -1,4 +1,6 @@
 import React from "react";
+import { HiArrowTopRightOnSquare } from "react-icons/hi2";
+<HiArrowTopRightOnSquare />
 
 function SocialCard({ socialInfo }) {
     return (
@@ -9,9 +11,9 @@ function SocialCard({ socialInfo }) {
                 </figure>
             </div>
             <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-start flex-1 gap-3">
-                {socialInfo.mail ? (<a href={`mailto:${socialInfo.to}`} target="_blank" className={"font-sans hover:text-cyan-500 text-amber-300 text-2xl"}>{socialInfo.website}</a>)
+                {socialInfo.mail ? (<a href={`mailto:${socialInfo.to}`} target="_blank" className="flex items-center font-sans hover:text-cyan-500 text-amber-300 text-2xl gap-2">{socialInfo.website} <HiArrowTopRightOnSquare /></a>)
                 : 
-                <a href={socialInfo.to} target="_blank" className={"font-sans hover:text-cyan-500 text-amber-300 text-2xl"}>{socialInfo.website}</a>}
+                <a href={socialInfo.to} target="_blank" className="flex items-center font-sans hover:text-cyan-500 text-amber-300 text-2xl gap-2">{socialInfo.website} <HiArrowTopRightOnSquare /></a>}
                 <p className="font-mono text-xl text-white">{socialInfo.message}</p>
             </div>
         </article>
