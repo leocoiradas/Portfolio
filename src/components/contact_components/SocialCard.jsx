@@ -9,11 +9,10 @@ function SocialCard({ socialInfo }) {
                 </figure>
             </div>
             <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-start flex-1 gap-3">
-                <h2 className={"font-sans text-purple-500 text-2xl"}>{socialInfo.website}</h2>
+                {socialInfo.mail ? (<a href={`mailto:${socialInfo.to}`} target="_blank" className={"font-sans hover:text-cyan-500 text-amber-300 text-2xl"}>{socialInfo.website}</a>)
+                : 
+                <a href={socialInfo.to} target="_blank" className={"font-sans hover:text-cyan-500 text-amber-300 text-2xl"}>{socialInfo.website}</a>}
                 <p className="font-mono text-xl text-white">{socialInfo.message}</p>
-                {socialInfo.mail ? (<a href={`mailto:${socialInfo.to}`} target="_blank" className="w-40 inline-flex items-center justify-center text-center hover:bg-cyan-500 bg-blue-700 rounded-md px-6 py-2 gap-2">{socialInfo.icon} {socialInfo.website}</a>)
-                :
-                <a href={socialInfo.to} target="_blank" className="w-40 inline-flex items-center justify-center text-center hover:bg-cyan-500 bg-blue-700 rounded-md px-6 py-2 gap-2">{socialInfo.icon} {socialInfo.website}</a>}
             </div>
         </article>
     )

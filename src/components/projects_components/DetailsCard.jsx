@@ -1,30 +1,10 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import LoadingData from "./LoadingData";
+import ProjectSkills from "./ProjectSkills";
 
 
 function DetailsCard({ details }) {
-    const [index, setIndex] = useState(0)
-    const previousPhoto = () => {
-        setIndex((currentImage) => (currentImage - 1 >= 0 ? currentImage - 1 : details.images.length - 1))
-    }
-    const nextPhoto = () => {
-        setIndex((currentImage) => (currentImage + 1 > details.images.length - 1 ? 0 : currentImage + 1))
-    }
-    const imageCarousel = () => {
-        nextPhoto()
-    }
-    useEffect(() => {
-        const autoNextPhoto = setInterval(imageCarousel, 10000)
-        return () => {
-            clearInterval(autoNextPhoto)
-        }
-    }, [index, details])
-    useEffect(() => {
-        setIndex(0);
-    }, [details]);
 
     const gitHubIcon = <FaGithub />
 
@@ -35,26 +15,27 @@ function DetailsCard({ details }) {
 
     return (
         <section className="lg:max-w-[65dvw]">
-            <div
-                className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                <div className="h-[16rem] lg:h-[34rem]">
-                    <img
-                        className=" h-full w-full rounded-t-lg object-fill"
-                        src={details.images[index]}
-                        alt={details.name} />
+            <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div className="flex  rounded-md snap-x snap-mandatory overflow-x-scroll scroll-smooth gap-3 md:gap-6">
+                    {details.images.map((image) => (
+                            <img
+                                className="snap-center h-[16rem] md:h-[34rem] w-full rounded-t-lg object-fill flex-shrink-0"
+                                src={image}
+                                alt={details.name} />
+                    ))}
                 </div>
-                <div className="w-full flex flex-col lg:flex-row flex-wrap justify-evenly items-center p-4 gap-2">
-                    <button onClick={previousPhoto} className="w-4/5 lg:w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Previous Photo</button>
-                    <button onClick={nextPhoto} className="w-4/5 lg:w-[45%] bg-purple-400 hover:bg-purple-700 text-center rounded-md px-4 py-3">Next Photo</button>
-                </div>
-                <div className="p-6 text-center lg:text-start">
+                <div className="p-6 flex flex-col justify-center items-center text-center">
                     <h5
-                        className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                        className="mb-2 text-xl font-medium leading-tight text-amber-500">
                         {details.name}
                     </h5>
                     <p className="mb-4 text-sm lg:text-base text-neutral-600 dark:text-neutral-200">
                         {languageDesc}
                     </p>
+                    <div className="flex flex-col md:flex-row gap-1 p-3">
+                        <h6 className="text-xl text-amber-500">{t("projectDetails.projectSkills")}</h6>
+                        <ProjectSkills skillsArr={details.skills} />
+                    </div>
                     <p className="text-base text-neutral-600 dark:text-neutral-200">
                         <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
                     </p>
