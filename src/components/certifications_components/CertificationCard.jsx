@@ -14,7 +14,7 @@ function CertificationCard({ certification }) {
             </div>
             <a href={certification.link} target="_blank" className="text-black bg-amber-400 hover:bg-amber-300 rounded-md px-5 py-2">{t("certifications.button")}</a>
             <div className="divide-y"></div>
-            <div className="flex flex-wrap justify-center items-center text-2xl lg:text-3xl gap-2">
+            <div className="flex flex-wrap justify-center items-center text-3xl md:text-4xl gap-2">
                 {certification.skills}
             </div>
         </article>
