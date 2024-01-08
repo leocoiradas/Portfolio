@@ -17,8 +17,9 @@ function DetailsCard({ details }) {
         <section className="lg:max-w-[65dvw]">
             <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                 <div className="flex  rounded-md snap-x snap-mandatory overflow-x-scroll scroll-smooth gap-3 md:gap-6">
-                    {details.images.map((image) => (
+                    {details.images.map((image, i) => (
                             <img
+                                key={i}
                                 className="snap-center h-[16rem] md:h-[34rem] w-full rounded-t-lg object-fill flex-shrink-0"
                                 src={image}
                                 alt={details.name} />
@@ -26,7 +27,7 @@ function DetailsCard({ details }) {
                 </div>
                 <div className="p-6 flex flex-col justify-center items-center text-center">
                     <h5
-                        className="mb-2 text-xl font-medium leading-tight text-amber-500">
+                        className=" inline-block mb-2 text-xl font-medium leading-tight text-amber-500">
                         {details.name}
                     </h5>
                     <p className="mb-4 text-sm lg:text-base text-neutral-600 dark:text-neutral-200">
