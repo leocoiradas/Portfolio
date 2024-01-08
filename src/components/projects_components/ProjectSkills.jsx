@@ -55,7 +55,7 @@ function ProjectSkills({ skillsArr }){
 
     return(
         <div className="flex flex-wrap gap-3 justify-center items-center p-3 md:p-0">
-            {iconSkills.map((element) => (<p className="text-2xl md:text-3xl text-purple-500">{element}</p>))}
+            {iconSkills.map((element) => (<p className="text-3xl md:text-4xl text-purple-500">{element}</p>))}
         </div>
     )
 }
