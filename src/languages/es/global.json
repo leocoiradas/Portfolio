@@ -42,7 +42,7 @@
         "message" : "Bienvenido a mi portfolio. Soy Alan, un desarrollador Full Stack especializado en el Stack MERN. Este espacio es el resultado de dedicación y pasión, donde cada línea de código cuenta una historia de desafíos superados y soluciones innovadoras. Te invito a explorar y descubrir el mundo digital que he creado. Espero que tu visita sea inspiradora y que tengas un excelente día."
     },
     "about": {
-        "message": "Soy un apasionado desarrollador con un año de dedicación al estudio de la programación web, centrándome en el Stack MERN y empleando JavaScript como mi herramienta principal. Mi enfoque principal es poner a prueba mis conocimientos a través de proyectos desafiantes que no solo fortalecen mis habilidades, sino que también sirven como evidencia tangible de mi capacidad. Cada proyecto es una oportunidad para demostrar mi destreza en el desarrollo web y para superar desafíos técnicos. Además, estoy constantemente en la búsqueda de nuevas habilidades que puedan mejorar mi perfil profesional, asegurando un crecimiento continuo en el cambiante panorama tecnológico."
+        "message": "En la actualidad, poseo competencias en el desarrollo web, especializado en el Stack MERN, y me encuentro inmerso en el desarrollo de proyectos personales que desafían y evalúan mis habilidades. Mi compromiso con el crecimiento continuo me lleva a considerar la incorporación de nuevas tecnologías a mi repertorio, entre ellas NextJS, SQL y MySQL"
     },
     "projects": {
         "button": "Más detalles",
@@ -65,5 +65,8 @@
     },
     "certifications": {
         "button": "Ir al certificado"
+    },
+    "skills": {
+        "title": "Conocimientos y habilidades"
     }
 }
