@@ -68,5 +68,10 @@
     },
     "skills": {
         "title": "Conocimientos y habilidades"
+    },
+    "navbar-button": {
+        "name-open": "Abrir navbar",
+        "name-close": "Cerrar navbar",
+        "description": "This, is the navbar display button. When is clicked, it shows a list with the sections of the website, clicking every section will take you to the selected section of the website."
     }
 }
