@@ -27,7 +27,7 @@ function DetailsCard({ details }) {
                 </div>
                 <div className="p-6 flex flex-col justify-center items-center text-center">
                     <h5
-                        className=" inline-block mb-2 text-xl font-medium leading-tight text-amber-500">
+                        className="w-full mb-2 text-xl font-medium leading-tight text-amber-500">
                         {details.name}
                     </h5>
                     <p className="mb-4 text-sm lg:text-base text-neutral-600 dark:text-neutral-200">
@@ -37,7 +37,7 @@ function DetailsCard({ details }) {
                         <h6 className="text-xl text-amber-500">{t("projectDetails.projectSkills")}</h6>
                         <ProjectSkills skillsArr={details.skills} />
                     </div>
-                    <p className="text-base text-neutral-600 dark:text-neutral-200">
+                    <p className="w-full text-base text-neutral-600 dark:text-neutral-200 mb-4">
                         <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
                     </p>
                     <div className="w-full flex justify-center items-center">
