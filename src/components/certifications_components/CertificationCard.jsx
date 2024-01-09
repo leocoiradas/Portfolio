@@ -9,8 +9,8 @@ function CertificationCard({ certification }) {
                 <img src={certification.image} className="w-full h-full rounded-md"/>
             </div>
             <div className="flex flex-col justify-center items-center gap-3 p-3">
-                <h3 className="text-xl lg:text-2xl">{certification.title}</h3>
-                <p className="text-xl">{certification.institution}</p>
+                <h3 className="text-xl lg:text-2xl text-white">{certification.title}</h3>
+                <p className="text-xl text-white">{certification.institution}</p>
             </div>
             <a href={certification.link} target="_blank" className="text-black bg-amber-400 hover:bg-amber-300 rounded-md px-5 py-2">{t("certifications.button")}</a>
             <div className="divide-y"></div>

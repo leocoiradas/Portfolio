@@ -68,6 +68,10 @@
     },
     "skills": {
         "title": "Skills"
+    },
+    "navbar-button": {
+        "name-open": "Display navbar",
+        "name-close": "Close navbar",
+        "description": "This, is the navbar display button. When is clicked, it shows a list with the sections of the website, clicking every section will take you to the selected section of the website."
     }
-    
 }
