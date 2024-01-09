@@ -20,7 +20,7 @@ function DetailsCard({ details }) {
                     {details.images.map((image, i) => (
                             <img
                                 key={i}
-                                className="snap-center h-[14rem] md:h-[34rem] w-full object-fill flex-shrink-0"
+                                className="snap-center h-[16rem] md:h-[34rem] w-full object-fill flex-shrink-0"
                                 src={image}
                                 alt={details.name} />
                     ))}
@@ -30,15 +30,15 @@ function DetailsCard({ details }) {
                         className="w-full mb-2 text-xl font-medium leading-tight text-amber-500">
                         {details.name}
                     </h5>
-                    <p className="mb-4 text-sm lg:text-base text-neutral-600 dark:text-neutral-200">
+                    <p className="mb-4 text-sm lg:text-lg text-neutral-200">
                         {languageDesc}
                     </p>
                     <div className="flex flex-col md:flex-row gap-1 p-3">
                         <h6 className="text-xl text-amber-500">{t("projectDetails.projectSkills")}</h6>
                         <ProjectSkills skillsArr={details.skills} />
                     </div>
-                    <p className="w-full text-base text-neutral-600 dark:text-neutral-200 mb-4">
-                        <small className="text-neutral-500 dark:text-neutral-400">{details.period}</small>
+                    <p className="w-full text-base text-neutral-200 mb-4">
+                        <small className="text-neutral-400">{details.period}</small>
                     </p>
                     <div className="w-full flex justify-center items-center">
                         <a href={details.github} target="_blank" className="w-auto inline-flex justify-center items-baseline text-center bg-black text-white hover:bg-slate-800 px-6 py-3 gap-2 rounded-md">{gitHubIcon} {t("projectDetails.githubRepository")}</a>

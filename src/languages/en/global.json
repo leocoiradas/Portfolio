@@ -8,6 +8,7 @@
             "contact": "Contact"
         },
         "language": {
+            "selector": "Language selector",
             "en": "English",
             "es": "Spanish"
         }
