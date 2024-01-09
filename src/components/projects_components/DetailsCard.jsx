@@ -15,12 +15,12 @@ function DetailsCard({ details }) {
 
     return (
         <section className="lg:max-w-[65dvw]">
-            <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                <div className="flex  rounded-md snap-x snap-mandatory overflow-x-scroll scroll-smooth gap-3 md:gap-6">
+            <div className="block rounded-md shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
+                <div className="flex  snap-x snap-mandatory overflow-x-scroll scroll-smooth gap-3 md:gap-6">
                     {details.images.map((image, i) => (
                             <img
                                 key={i}
-                                className="snap-center h-[16rem] md:h-[34rem] w-full rounded-t-lg object-fill flex-shrink-0"
+                                className="snap-center h-[20rem] md:h-[34rem] w-full object-fill flex-shrink-0"
                                 src={image}
                                 alt={details.name} />
                     ))}
