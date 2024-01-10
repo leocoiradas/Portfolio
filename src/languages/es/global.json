@@ -68,7 +68,11 @@
         "button": "Ir al certificado"
     },
     "skills": {
-        "title": "Conocimientos y habilidades"
+        "title": "Conocimientos y habilidades",
+        "collections": {
+            "frontend": "Desarrollo Frontend",
+            "backend-mern": "Desarrollo Backend MERN"
+        }
     },
     "navbar-button": {
         "name-open": "Abrir navbar",
