@@ -68,7 +68,12 @@
         "button": "Link to certificate"
     },
     "skills": {
-        "title": "Skills"
+        "title": "Skills",
+        "collections": {
+            "frontend": "Frontend Development Stack",
+            "backend-mern": "Backend MERN Development Stack"
+        }
+
     },
     "navbar-button": {
         "name-open": "Display navbar",
