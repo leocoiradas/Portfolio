@@ -43,6 +43,7 @@
         "message" : "Welcome to my portfolio. I'm Alan, a Full Stack developer specializing in the MERN Stack. This space is the result of dedication and passion, where each line of code tells a story of challenges overcome and innovative solutions. I invite you to explore and discover the digital world I've created. I hope your visit is inspiring, and may you have an excellent day."
     },
     "about": {
+        "job-title": "Full stack developer",
         "message": "Currently, I have knowledge in the field of web development, specifically in the MERN stack, and I'm applying these skills in various projects that test my capabilities. I am fully committed to programming, and I plan to add new skills to my stack, such as NextJS, SQL, and MySQL."
     },
     "projects": {
