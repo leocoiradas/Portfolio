@@ -20,7 +20,7 @@ function DetailsCard({ details }) {
                     {details.images.map((image, i) => (
                             <img
                                 key={i}
-                                className="snap-center md:h-[34rem] w-full object-fill flex-shrink-0"
+                                className="snap-center w-full object-fill flex-shrink-0"
                                 src={image}
                                 alt={details.name} />
                     ))}
