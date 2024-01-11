@@ -6,12 +6,12 @@ function Details() {
   const { t } = useTranslation("global")
   const details = {
     name: "Alan Leonel Coiradas",
-    profession: "Full Stack Developer",
+    profession: t("about.job-title"),
     message: "about.message"
   };
 
   return (
-    <article className="flex flex-col lg:flex-row justify-center items-center lg:w-[75dvw] gap-3 p-4 text-2xl text-white border-2 rounded-md border-purple-400 backdrop-blur-md bg-black/60">
+    <article className="flex flex-col lg:flex-row justify-center items-center lg:w-[65dvw] gap-3 p-4 text-2xl text-white border-2 rounded-md border-purple-400 backdrop-blur-md bg-black/60">
         <article className="flex flex-col justify-center items-center flex-1">
             <article className="w-48 h-48">
                 <img src={profileImg} alt={details.name} className="object-cover w-full h-full" />

@@ -1,6 +1,6 @@
 import React from "react";
 import Details from "../components/about_components/Details";
-import Skills from "../components/about_components/Skills";
+import SkillsCollections from "../components/about_components/SkillsCollections";
 import Page from "../components/Page";
 import { FaUserCircle } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
@@ -15,7 +15,7 @@ function About(){
     return (
         <Page info={aboutInfo}>
             <Details />
-            <Skills />
+            <SkillsCollections />
         </Page>
     )
 }
