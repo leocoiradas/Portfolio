@@ -16,7 +16,7 @@ function NavbarFunction(){
     }
   }, [isDesktop]);
     return(
-        <div className={`${open ? " flex justify-end fixed  inset-0 backdrop-blur-md bg-black/30 bg-black bg-opacity-50 z-50" : null}`}>
+        <div className={`${open ? " flex justify-end fixed  inset-0 backdrop-blur-sm bg-black/60 bg-black bg-opacity-50 z-50" : null}`}>
             <div className="lg:hidden flex justify-end h-full">
                 <HamburgerButton buttonSwitch={handleNavbar} openSwitch={open}>
                     <Navbar navFunction={handleNavbar} />
