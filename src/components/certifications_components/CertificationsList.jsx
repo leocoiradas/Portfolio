@@ -8,14 +8,14 @@ import { SiRedux, SiMongodb, SiExpress, SiPostman, SiTailwindcss } from "react-i
 function CertificationList(){
     const certificationInfo = [
         {
-            title: "Frontend Developer",
+            title: "certifications.frontend-ap",
             institution: "MindHub",
             image: "/assets/certification_images/frontend-developer-certificate.webp",
             skills: [<FaHtml5 key="HTML"/>, <FaCss3Alt key="CSS" />, <IoLogoJavascript key="JavaScript" />, <FaGit key="Git" />, <FaGithub key="GitHub" />, <FaBootstrap key="Bootstrap" />],
             link: "https://www.credly.com/badges/98bc0846-4412-40e3-9994-15c9302d3387/public_url"
         },
         {
-            title: "Full Stack MERN Developer",
+            title: "certifications.mern-ap",
             institution: "MindHub",
             image: "/assets/certification_images/full-stack-mern-developer-certificate.webp", 
             skills: [<FaReact key="React" />, <SiRedux key="Redux" />, <SiMongodb key="MongoDB" />, <SiExpress key="Express" />, <FaNodeJs key="Nodejs" />, <SiPostman key="Postman" />, <SiTailwindcss key="TailwindCSS" />],

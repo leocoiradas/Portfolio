@@ -66,6 +66,8 @@
         "title": "Curriculum"
     },
     "certifications": {
+        "frontend-ap": "Desarrollador Frontend",
+        "mern-ap": "Desarrollador Full Stack MERN",
         "button": "Ir al certificado"
     },
     "skills": {
