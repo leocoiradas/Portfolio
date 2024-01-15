@@ -13,17 +13,19 @@ import global_en from "./languages/en/global.json"
 const languageDetector = new LanguageDetector(
   {
     lookupQuerystring: true,
-    lookuplocalStorage: true
+    lookuplocalStorage: true,
+    nonExplicitSupportedLngs: true
   }
 );
+
+const currentLanguage = i18next.language;
+console.log(currentLanguage)
 i18next.use(languageDetector);
-const currentLanguage = i18next.language
-
-
-
 i18next.init({
+  supportedLngs: ['en', 'es'],
   interpolation: {escapeValue: false},
   lng: currentLanguage,
+  fallbackLng: "es",
   resources: {
     es: {
       global: global_es
@@ -31,7 +33,7 @@ i18next.init({
     en: {
       global: global_en
     }
-  },
+  }
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
