@@ -37,7 +37,7 @@ function ContactInfo(){
             website: t("curriculum.title"),
             icon: <BiSolidContact />,
             message: t("contact.curriculum"),
-            to: "https://drive.google.com/file/d/1QaLopfYUq-3MCwj37I9mmFdc80kCfhsc/view?usp=drive_link",
+            to: "https://drive.google.com/file/d/1KC1NXlosY3JdrH8MqpZhWsf7Qrvi66xV/view?usp=sharing",
             mail: false
         }
     ]
